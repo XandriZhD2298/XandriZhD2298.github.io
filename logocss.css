@@ -1,0 +1,50 @@
+.header {
+	background-image: url(demoShop/patt2light.png);
+	
+}
+.row {
+		list-style: none;
+		margin: 0px;
+		padding-top: 16px;
+		padding-bottom: 20px;
+
+}
+.row:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.logo {
+	
+	font-weight: bold;
+	font-size: 30px;
+}
+.here {
+	
+	font-weight: lighter;
+	font-size: 30px;
+	padding-right: 10px;
+}
+.menu {
+	color: #2c71b8;
+	font-family: Roboto;
+	font-weight: lighter;
+	font-size: 18px;
+	float: left;	
+}
+.smallmenu{
+	padding-left: 10px; 
+	padding-top: 10px;
+}
+.searchbox{
+	color: #2c71b8;
+	font-family: Roboto;
+	font-weight: lighter;
+	font-size: 14px;
+	background-color: inherit;
+	border-width: 1px;
+    border-color: #2c71b8;
+    padding-left: 10px;
+
+}
