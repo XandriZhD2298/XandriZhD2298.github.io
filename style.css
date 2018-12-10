@@ -1,0 +1,156 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif; 
+	background-image: url(demoShop/patt.png);
+}
+.header{
+	background-color: #ffffffbf;
+	padding: 25px 0; 
+}
+.container{
+	width: 1178px;
+	margin: 0, auto;
+}
+.row:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+div[class*="col-"]{
+	float: left;
+}
+.col-3{
+	width: 25%;
+}
+.col-6{
+	width: 50%
+}
+.col-9{
+	width: 75%;
+}
+.col-4{
+	width: 33.3%;
+}
+.logo img{
+	vertical-align: middle;
+	padding-top: 7px;
+}
+.menu li{
+	width: 25%;
+	float: left;
+	border-left: 1px solid #2c71b8;
+	list-style-type: none;
+}
+.menu li:last-child {
+	border-right: 1px solid #2c71b8; 
+}
+.menu a{
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	color: #2c71b8;
+
+}
+.menu a:hover{
+	color: white;
+	background-color: #2c71b8;
+}
+.submenu a{
+	color: white;
+	display: block;
+	padding-left:  15px;
+	padding-right: 25px;
+	text-align: left;	
+	height: 30px;
+	line-height: 30px;
+
+
+}
+.submenu a:hover{
+	color: #2c71b8;
+	background-color: white;
+}
+
+.menu li ul{
+	position: absolute;
+	display: none;
+	margin-left: -1px;
+
+	
+}
+.menu li ul li{
+	float: none;
+	width: 100%
+
+	
+}
+.menu li:hover ul{
+	display: block;
+	background-color: #2c71b8;
+	color: white;
+}
+
+.search {
+	position: relative;
+	width: 150px;
+	margin-left: 25px;
+	top: 11px;
+	border: 1px solid #2c71b8;
+	min-height: 30px;
+	color: #2c71b8;
+}
+
+
+
+.searchbox{
+	color: #2c71b8;
+	font-family: Roboto;
+	font-size: 16px;
+	background-color: inherit;
+	border: none;
+    outline: none;
+    padding-left: 10px;
+    padding-top: 3px;
+    width: 70%;
+}
+::-webkit-input-placeholder {color:#2c71b8;}
+.button1{
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	width: 21px;
+	height: 21px;
+	border: none;
+	background-color: #2c71b8;
+	background-image: url(demoShop/icon4.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.korzina{
+	background-color: white;
+	position: relative;
+	top: 12px;
+	padding-right: 3px;
+	margin-left: 25px;
+	height: 29px;
+	width: 28px;
+	padding: 5px;
+
+	
+}
+.kolvo{
+	position: absolute;
+	top: -8px;
+	left: -5px;
+	font-size: 10px;
+	border: 1px solid #2c71b8;
+	border-radius: 50%;
+	color: white;
+	background-color: #2c71b8;
+	padding-right: 3px;
+	padding-left: 3px;	
+}
