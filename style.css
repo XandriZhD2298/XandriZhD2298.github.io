@@ -78,7 +78,7 @@ div[class*="col-"]{
 	text-align: left;	
 	height: 30px;
 	line-height: 30px;
-	width: 294px;
+	width: 293px;
 
 
 }
@@ -91,15 +91,13 @@ div[class*="col-"]{
 	position: absolute;
 	display: none;
 	margin-left: -1px;
-
-	
+	z-index: 1;
 }
-.menu li ul li{
+.submenu li{
 	float: none;
-	width: 100%
 
-	
 }
+
 .menu li:hover ul{
 	display: block;
 	background-color: #2c71b8;
@@ -131,7 +129,9 @@ div[class*="col-"]{
     padding-top: 3px;
     width: 70%;
 }
+
 ::-webkit-input-placeholder {color:#2c71b8;}
+
 .button1{
 	position: absolute;
 	top: 3px;
@@ -168,7 +168,66 @@ div[class*="col-"]{
 	padding-right: 3px;
 	padding-left: 3px;	
 }
-/* search form and bit properties  END*/
+/* search form and bin properties  END*/
+
+/* Slider Start*/
+.slider div{
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	padding: 50px 0;
+}
+
+
+
+/*Filter Start*/
+.filter{
+	background-color: rgba(255,255,255,0.2);
+	padding-top: 35px;
+	padding-bottom: 20px;
+}
+.filterItem{
+	margin-top:  20px;
+	margin-bottom: 10px;
+}
+.titleFilter{
+	margin: 10px;
+	padding-top: 40px;
+}
+input[type="checkbox"]{
+	display: none;
+}
+label{
+	position: relative;
+	color: white;
+	padding-left: 30px;
+	cursor: pointer;
+
+
+}
+label:before{
+	content: "";
+	display: block;
+	width: 7px;
+	height: 7px;
+	background-color: inherit;
+	position: absolute;
+	top: 4px;
+	left: 10px;
+	border: 1px solid white;
+
+	
+}
+input:checked + label:before{
+	background-color: white;
+}
+.filter a{
+	color: white;
+	padding-left: 25%;
+	text-decoration: none; 
+}
+
+
 
 /* hlebnie kroshki i title*/
 .bread{
@@ -300,8 +359,6 @@ padding-top: 50px;
 	background-repeat: no-repeat;
 }
 
-	
-
 .devname{
 	font-size: 25px;
 	color: white;
@@ -320,6 +377,7 @@ padding-top: 50px;
 .bold{
 	font-weight: 700;
 	text-transform: uppercase;
+	color: white;
 	
 }
 .price{
@@ -336,6 +394,16 @@ font-weight: 700;
 vertical-align: top;
 }
 /* css dlya opisaniya tovara v bloke     END  */
+
+/*input section */
+.quantity-block {
+	margin-left: 80px;
+}
+.quantity-block input{
+	width: 50px;
+	text-align: center;
+}
+
 
 /* oformlenie knopok ryadom s opisaniem tovara    BEGIN  */
 .details{

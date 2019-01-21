@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>LogoHere</title>
 	<link rel="stylesheet"  href="reset.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet"  href="style.css">
 </head>
 <body>
@@ -67,7 +69,7 @@
 					</div>
 					<div class="col-3">
 						<div class="korzina">
-							<span class="kolvo">4</span><img src ="demoShop/icon1.png">
+							<span class="kolvo" id="products-count">4</span><img src ="demoShop/icon1.png">
 						</div>
 					</div>
 				</div>
@@ -77,9 +79,12 @@
 
 <!-- Slider  START here-->
 
-	<div>
+	<div class="slider-block">
 		<div class="container">
-			<div style ="border-bottom: 10px solid black"><span style="font-size: 150px">Slider</span>
+			<div class="slider">
+				<div>Slide 1</div>
+  				<div>Slide 2</div>
+  				<div>Slide 3</div>
 			</div>
 		</div>
 	</div>
@@ -90,8 +95,62 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-3">
-					<div class="filtr">
-						device type
+					<div class="filter">
+						<span class= "bold titleFilter filterItem" >device type</span>
+						<div class="filterItem">
+							<input type="checkbox" id="Laptop">
+							<label for="Laptop">Laptop</label>
+						</div>
+						<div class="filterItem">
+							<input type="checkbox" id="Tablet">
+							<label for="Tablet">Tablet</label>
+						</div class="filterItem">
+						<span class= "bold titleFilter" >color</span>
+						<div class="filterItem">
+							<input type="checkbox" id="black">
+							<label for="black">Black</label>
+						</div>
+						<div class="filterItem">
+							<input type="checkbox" id="red">
+							<label for="red">Red</label>
+						</div>
+						<div class="filterItem">
+							<input type="checkbox" id="green">
+							<label for="green">Green</label>
+						</div>
+						<div class="filterItem">
+							<input type="checkbox" id="blue">
+							<label for="blue">Blue</label>
+						</div>
+						<div class="filterItem">
+							<input type="checkbox" id="orange">
+							<label for="orange">Orange</label>
+						</div>
+						<span class= "bold titleFilter" >ram</span>
+						<div class="filterItem">
+							<input type="checkbox" id="gb1">
+							<label for="gb1">1GB</label>
+						</div>
+						<div class="filterItem">
+							<input type="checkbox" id="gb2">
+							<label for="gb2">2GB</label>
+						</div>
+						<div class="filterItem">
+							<input type="checkbox" id="gb4">
+							<label for="gb4">4GB</label>
+						</div>
+						<div class="filterItem">
+							<input type="checkbox" id="gb6">
+							<label for="gb6">6GB</label>
+						</div>
+						<div class="filterItem">
+							<input type="checkbox" id="gb8">
+							<label for="gb8">8GB</label>
+						</div>
+						<a href="">Show More Options...</a>
+						<div class="knopka filterItem">
+							<button class=" details">Submit</button>
+						</div>	
 					</div>
 				</div>
 				<div class="col-9">
@@ -131,17 +190,17 @@
 									</div>
 								<div class="col-2 picture ">
 										<div class="square">
-											<!-- <img src="demoShop/icon8.png"> -->
+											
 										</div>
 										<div class="heart">
-											<!--<img src="demoShop/icon5.png"> -->
+											
 										</div>
 								</div>
 							</div>
 
 
 						<!-- END of img section. 
-							Begin of Description section
+							Begin of Description section 1
 						-->
 
 							<div class="description">
@@ -155,6 +214,11 @@
 								<p class="price">
 									<span class="price">$599</span><span class="kopeiki">25
 								</p>
+								<div class="quantity-block">
+									<button class="decrement-button">-</button>
+									<input type="text" value="1">
+									<button class="increment-button">+</button>
+								</div>
 								<p class="knopka">
 									<button class="details">More Details
 									</button>
@@ -166,8 +230,8 @@
 								</p>
 							</div>
 						</div>
-					<!-- END of Description Section
-				END of one item section-->
+					<!-- END of Description Section 1
+				END of one item 1 section-->
 
 <!-- START of one item section-->
 
@@ -191,7 +255,7 @@
 
 
 						<!-- END of img section. 
-							Begin of Description section
+							Begin of Description section 2
 						-->
 
 							<div class="description">
@@ -205,6 +269,11 @@
 								<p class="price">
 									<span class="price">$1250</span><span class="kopeiki">99
 								</p>
+								<div class="quantity-block">
+									<button class="decrement-button">-</button>
+									<input type="text" value="1">
+									<button class="increment-button">+</button>
+								</div>
 								<p class="knopka">
 									<button class="details">More Details
 									</button>
@@ -216,9 +285,9 @@
 								</p>
 							</div>
 						</div>
-					<!-- END of Description Section
+					<!-- END of Description Section 2
 				END of one item section-->
-				<!-- START of one item section-->
+				<!-- START of one item section 3-->
 
 						<div class="oneitem">
 							
@@ -254,6 +323,11 @@
 								<p class="price">
 									<span class="price">$399</span><span class="kopeiki">50
 								</p>
+								<div class="quantity-block">
+									<button class="decrement-button">-</button>
+									<input type="text" value="1">
+									<button class="increment-button">+</button>
+								</div>
 								<p class="knopka">
 									<button class="details">More Details
 									</button>
@@ -268,7 +342,7 @@
 					<!-- END of Description Section
 				END of one item section-->
 
-				<!-- START of one item section-->
+				<!-- START of one item 4 section-->
 
 						<div class="oneitem">
 							
@@ -290,7 +364,7 @@
 
 
 						<!-- END of img section. 
-							Begin of Description section
+							Begin of Description section 4
 						-->
 
 							<div class="description">
@@ -304,6 +378,11 @@
 								<p class="price">
 									<span class="price">$1599</span><span class="kopeiki">15
 								</p>
+								<div class="quantity-block">
+									<button class="decrement-button">-</button>
+									<input type="text" value="1">
+									<button class="increment-button">+</button>
+								</div>
 								<p class="knopka">
 									<button class="details">More Details
 									</button>
@@ -318,7 +397,7 @@
 					<!-- END of Description Section
 				END of one item section-->
 
-				<!-- START of one item section-->
+				<!-- START of one item 5 section-->
 
 						<div class="oneitem">
 							
@@ -340,7 +419,7 @@
 
 
 						<!-- END of img section. 
-							Begin of Description section
+							Begin of Description section 5
 						-->
 
 							<div class="description">
@@ -354,6 +433,11 @@
 								<p class="price">
 									<span class="price">$2599</span><span class="kopeiki">25
 								</p>
+								<div class="quantity-block">
+									<button class="decrement-button">-</button>
+									<input type="text" value="1">
+									<button class="increment-button">+</button>
+								</div>
 								<p class="knopka">
 									<button class="details">More Details
 									</button>
@@ -368,7 +452,7 @@
 					<!-- END of Description Section
 				END of one item section-->
 
-				<!-- START of one item section-->
+				<!-- START of one item 6 section-->
 
 						<div class="oneitem">
 							
@@ -390,7 +474,7 @@
 
 
 						<!-- END of img section. 
-							Begin of Description section
+							Begin of Description section 6
 						-->
 
 							<div class="description">
@@ -404,6 +488,11 @@
 								<p class="price">
 									<span class="price">$112</span><span class="kopeiki">99
 								</p>
+								<div class="quantity-block">
+									<button class="decrement-button">-</button>
+									<input type="text" value="1">
+									<button class="increment-button">+</button>
+								</div>
 								<p class="knopka">
 									<button class="details">More Details
 									</button>
@@ -581,5 +670,10 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+				
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
